@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
   <link rel="shortcut icon" href="dist/img/zencode_logo_inverse.png" type="image/x-icon">
   <link href="dist/output.css" rel="stylesheet">
   <title>My Portfolio | Zen Code</title>
@@ -18,7 +21,7 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   <!-- header start -->
   <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
     <div class="container">
-      <div class="flex items-center justify-between relative">
+      <div class="flex items-center justify-between relative">  
         <div class="px-4">
           <a href="#home" class="font-bold text-primary text-lg block py-6"><h1>Fauzan Allhafizh</h1></a>
         </div>    
@@ -74,18 +77,18 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   <section id="home" class="pt-36 dark:bg-dark">
     <div class="container">
       <div class="flex flex-wrap">
-        <div class="w-full self-center px-4 lg:w-1/2" >
+        <div class="w-full self-center px-4 lg:px-24 lg:w-1/2" >
           <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span class=" block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white"> Mohammad </span><span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white">Fauzan Alhafizh</span> </h1>
-          <h2 class="font-medium  text-secondary text-lg mb-4 lg:text-2xl"><span class="text-primary">UI/UX Designer</span> + Developers</h2>
+          <h2 class="text-secondary text-lg mb-4 lg:text-2xl"><span class="text-primary font-bold">Front End Enggineer</span>  || Pixel Art Enthusiast</h2>
           <p class="font-medium text-slate-400 mb-10 leading-relaxed">Belajar Web Programming mudah dan menyenangkan bukan, <span class="font-bold text-dark dark:text-white">BUKAN!</span></p>
-          <a href="https://wa.me/085162902018" target="_blank"  class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-75 transition duration-300 ease-in-out">Hubungi Saya</a>
+          <a href="https://wa.me/085162902018" target="_blank"  class="button font-semibold hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"> <span class="txt">Hubungi Saya</span></a>
         </div>
         <div class="w-full self-end px-4 lg:w-1/2">
           <div class="relative -mt-5 lg:mt-0 lg:right-0">
             <img src="dist/img/profile.png" alt="Mohammad Fauzan Alhafizh" class="max-w-full mx-auto relative z-10">
             <span class="absolute -bottom-20  left-1/2 -translate-x-1/2">
               <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#0ea5e9" d="M70,-21.1C76.7,-2.3,58.3,26.4,36.5,39.6C14.8,52.9,-10.4,50.9,-25,39.1C-39.6,27.4,-43.7,5.9,-37.8,-11.9C-31.9,-29.7,-15.9,-43.9,7.9,-46.4C31.7,-49,63.4,-39.9,70,-21.1Z" transform="translate(100 100) scale(1.2)"  />
+                <path fill="#515ca6" d="M70,-21.1C76.7,-2.3,58.3,26.4,36.5,39.6C14.8,52.9,-10.4,50.9,-25,39.1C-39.6,27.4,-43.7,5.9,-37.8,-11.9C-31.9,-29.7,-15.9,-43.9,7.9,-46.4C31.7,-49,63.4,-39.9,70,-21.1Z" transform="translate(100 100) scale(1.2)"  />
               </svg>
             </span>
           </div>
@@ -100,15 +103,11 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
     <div class="container">
       <div class="flex flex-wrap">
         <div class="w-full px-4 mt-10 lg:w-1/2">
-          <h4 class="font-bold uppercase text-primary  text-lg mb-3">tentang Saya</h4>
-          <h2 class="font-bold text-dark text-3xl mt-5 max-w-md lg:text-5xl lg:max-w-xl dark:text-white">Yuk, Belajar Web Programming Di HAMKA Student Club(HSC).</h2>
-          <p class="font-medium text-base text-secondary max-w-xl lg:text-lg mb-3">HAMKA Student Club adalah komunitas yang berfokus pada teknologi website dan mobile programming, memberikan wadah bagi mahasiswa untuk mengembangkan keterampilan dan pengetahuan dalam bidang ini. Bergabunglah dengan kami untuk eksplorasi dan inovasi teknologi terkini!</p>
-          <a href="" class="font-medium text-white  bg-primary py-2 px-4 rounded-lg hover:opacity-80 ">Bergabung Sekarang</a>
-        </div>
-        <div class="w-full px-4 mt-10 lg:w-1/2">
-          <h3 class="font-semibold text-2xl  text-dark mb-3 lg:text-3xl lg:pt-10 dark:text-white">Mari berteman</h3>
-          <p class="font-medium text-base text-secondary max-w-xl mb-6 lg:text-lg">Kunjungi juga sosial media saya untuk melihat lebih banyak karya inspiratif dan pembaruan terbaru. Jangan lewatkan konten eksklusif dan insight yang kami bagikan di platform sosial kami. Mari kita terhubung dan berinteraksi lebih dekat!</p>
-          <!-- Icons sosmed -->
+          <h4 class="font-bold uppercase text-primary  text-lg mb-3">Who I Am</h4>
+          <h2 class="font-bold text-dark text-3xl mt-5 max-w-md lg:text-5xl lg:max-w-xl dark:text-white">About Me...</h2>
+          <p class="font-medium text-base text-secondary max-w-xl lg:text-lg mb-3">I am Moh. Fauzan Alhafizh, a 21 years old indonesian freelance Front-End Developers. I’m student from STTIKOM INSAN UNGGUL CILEGON who likes making anything i think with web technologies.</p>
+          <p class="font-medium text-base text-secondary max-w-xl lg:text-lg mb-3">I like to resolve design problem, create smart user interface and imagine useful interaction, developing rich web experiences and web applications. when not working around with code, I study how to escape from University, Actually for hire.</p>
+          <!-- Social media -->
           <div class="flex items-center">
             <!-- youtube -->
             <a href="https://www.youtube.com/channel/UChR_slqjSH9XXhRRSeRS4Yg" target="_blank" class="w-9 h-9 mr-3 rounded-full flex items-center justify-center  border border-slate-300 text-slate-300 hover:bg-primary hover:border-primary hover:text-white">
@@ -128,13 +127,18 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
             </a>
           </div>
         </div>
+        <div class="w-full px-4 mt-10 lg:w-1/2">
+          <h3 class="font-semibold text-2xl  text-dark mb-3 lg:text-3xl lg:pt-10 dark:text-white">Get In Touch</h3>
+          <p class="font-medium text-base text-secondary max-w-xl mb-6 lg:text-lg">Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+          <a href="#contact" target="_blank"  class="text-base relative font-semibold text-dark bg-none border-none py-3 px-5 buttonMe hover:text-white">Say Hello ! <i class="ri-arrow-right-line"></i></a>
+        </div>
       </div>
     </div>
   </section>
   <!-- About section end -->
 
   <!-- Portfolio section start -->
-  <section id="portfolio" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
+  <!-- <section id="portfolio" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
     <div class="container">
       <div class="w-full px-4">
         <div class="max-w-xl mx-auto text-center mb-16">
@@ -174,10 +178,61 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Portfolio section end -->
   
-  <!-- Clients section start -->
+  <!-- Portfolio section Start -->
+  <section id="portfolio" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
+<div class="container">
+  <div class="w-full px-4">
+    <div class="mx-auto text-center mb-16">
+      <h4 class="font-semibold text-primary text-lg mb-2">PORTFOLIO</h4>
+      <h2 class="text-dark font-bold  text-3xl sm:text-4xl lg:text-5 xl dark:text-white">Project terbaru</h2>
+      <p class="text-secondary font-medium text-md md:text-lg">Selamat datang di dunia kreatif saya! Di halaman proyek terbaru, Anda akan menemukan inspirasi dan inovasi terkini. Jelajahi karya-karya terbaru saya untuk ide-ide segar!</p>
+    </div>
+  </div>
+  <div class="flex flex-wrap">
+    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+        <img src="dist/img/project/hamka.JPG" alt="WEB HAMKA" class="w-full">
+        <div class="py-8 px-6">
+          <h3><a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">WEB HAMKA</a></h3>
+          <p class="font-medium text-secondary text-base mb-6">Pusat informasi dan komunitas teknologi, menyediakan sumber pengetahuan terkini dan wadah berbagi ide untuk para penggemar teknologi website dan mobile programming. Bergabunglah untuk mengembangkan keterampilan dan jaringan Anda!</p>
+          <a href="" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
+          <a href="" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+        <img src="dist/img/project/fightingGames.PNG" alt="Fighting Games" class="w-full">
+        <div class="py-8 px-6">
+          <h3><a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Fighting Games</a></h3>
+          <p class="font-medium text-secondary text-base mb-6">Website fighting games  saya adalah tempat untuk merasakan ketegangan dan keseruan dalam berbagai permainan pertarungan. Sambut tantangan, tunjukkan keahlian Anda, dan jadilah juara!</p>
+          <a href="" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
+          <a href="" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
+        </div>
+      </div>
+    </div>
+   
+    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+        <img src="dist/img/project/pukulTikusTanah.PNG" alt="Pukul Tikus Tanah" class="w-full">
+        <div class="py-8 px-6">
+          <h3><a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Game Pukul Tikus Tanah</a></h3>
+          <p class="font-medium text-secondary text-base mb-6">Selamat datang di "Pukul Tikus Tanah" - tempat seru untuk menguji refleks dan ketepatan Anda! Nikmati permainan online yang menghibur ini dan pukul tikus-tikus yang muncul di tanah dengan cepat.</p>
+          <a href="" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
+          <a href="" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </section>
+  <!-- portfolio section end -->
+
+  <!-- Pixel Area section start -->
   <section id="clients" class="pt-36 pb-32 bg-slate-800 dark:bg-slate-300">
     <div class="container">
       <div class="w-full px-4">
@@ -191,74 +246,18 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
       <div class="w-full px-4">
           <div class="flex flex-wrap justify-center items-center">
             <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/KFC.svg" alt="KFC">
+              <img src="dist/img/clients/logo-hamka.png" alt="HAMKA">
             </a>
             <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/samsung.svg" alt="samsung">
+              <img src="dist/img/clients/logo-smt.png" alt="HAMKA">
             </a>
-            
-            <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-">
-              <img src="dist/img/clients/McDonald's.svg" alt="McDonald">
-            </a>
-            <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-90 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/Netflix.svg" alt="Netflix">
-            </a>
-            <a href="#" class="max-w-[120px] mx-4 py-4 grayscale opacity-90 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
-              <img src="dist/img/clients/Starbucks.svg" alt="Starbucks">
-            </a>
+           
           </div>
       </div>
     </div>
   </section>
-  <!-- Clients section end -->
-
-  <!-- Blog section Start -->
-  <section id="blog" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
-<div class="container">
-  <div class="w-full px-4">
-    <div class="mx-auto text-center mb-16">
-      <h4 class="font-semibold text-primary text-lg mb-2">Blog</h4>
-      <h2 class="text-dark font-bold  text-3xl sm:text-4xl lg:text-5 xl dark:text-white">Tulisan terkini</h2>
-      <p class="text-secondary font-medium text-md md:text-lg">Jelajahi dunia melalui kata-kata. Di halaman blog saya, saya berbagi cerita, wawasan, dan inspirasi yang akan menghidupkan ide-ide Kamu.</p>
-    </div>
-  </div>
-  <div class="flex flex-wrap">
-    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-        <img src="https://source.unsplash.com/360x200?programming" alt="Programming" class="w-full">
-        <div class="py-8 px-6">
-          <h3><a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Tips Belajar Programming</a></h3>
-          <p class="font-medium text-secondary text-base mb-6">Kembangkan keahlian pemrograman Anda dengan panduan terbaik. Di blog ini, temukan wawasan dan tips terbaru untuk meningkatkan kemampuan Anda.</p>
-          <a href="" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca selengkapnya</a>
-        </div>
-      </div>
-    </div>
-    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-        <img src="https://source.unsplash.com/360x200?mechanical+keyboard" alt="mechanical keyboard" class="w-full">
-        <div class="py-8 px-6">
-          <h3><a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Review keyboard GMMK Pro</a></h3>
-          <p class="font-medium text-secondary text-base mb-6">Gali dunia keyboard mekanis dengan ulasan mendalam. Di blog ini, temukan panduan dan tinjauan untuk memilih keyboard yang sesuai dengan kebutuhan Anda.</p>
-          <a href="" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca selengkapnya</a>
-        </div>
-      </div>
-    </div>
-    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
-      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
-        <img src="https://source.unsplash.com/360x200?Coffe" alt="Coffe" class="w-full">
-        <div class="py-8 px-6">
-          <h3><a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Kopi darat</a></h3>
-          <p class="font-medium text-secondary text-base mb-6">Selamat datang di perjalanan rasa kopi terbaik. Blog ini adalah panduan perjalanan kopi darat, di mana kami menjelajahi rasa dan cerita dibalik secangkir kopi yang nikmat.</p>
-          <a href="" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Baca selengkapnya</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-  </section>
-  <!-- Blog section end -->
-
+  <!-- Pixel Area section end -->
+  
   <!-- Contact section start -->
   <section id="contact" class="pt-36 pb-32 dark:bg-dark">
     <div class="container">
@@ -266,7 +265,7 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
         <div class="mx-auto text-center mb-16">
           <h4 class="font-semibold text-primary text-lg mb-2">Contact</h4>
           <h2 class="text-dark font-bold  text-3xl sm:text-4xl lg:text-5 xl dark:text-white">Hubungi kami</h2>
-          <p class="text-secondary font-medium text-md md:text-lg">Get in touch! Saya ingin mendengar kabar dari teman-teman. Silakan gunakan formulir kontak untuk mengirimkan pesan atau informasi yang Kamu butuhkan.</p>
+          <p class="text-secondary font-medium text-md md:text-lg">Saya ingin mendengar kabar dari teman-teman. Silakan gunakan formulir kontak untuk mengirimkan pesan atau informasi yang Kamu butuhkan.</p>
         </div>
       </div>
       <form>
@@ -304,7 +303,7 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
           <p>Jl. Kepodang No.69, Bendungan, Kec. Cilegon, Kota Cilegon, Banten 42415</p>
         </div>
         <div class="w-full px-4 mb-12 text-slate-300 md:w-1/3">
-          <h3 class="font-semibold text-xl text-white mb-5">Kategori Tulisan</h3>
+          <h3 class="font-semibold text-xl text-white mb-5">Pixel Area</h3>
           <ul>
             <li>
               <a href="#" class="inline-block text-base text-slate-300 hover:text-primary mb-3" >Programming</a>
@@ -333,7 +332,7 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
               <a href="#clients" class="inline-block text-base text-slate-300 hover:text-primary mb-3" >Clients</a>
             </li>
             <li>
-              <a href="#blog" class="inline-block text-base text-slate-300 hover:text-primary mb-3" >Blog</a>
+              <a href="#blog" class="inline-block text-base text-slate-300 hover:text-primary mb-3" >Pixel Areas</a>
             </li>
             <li>
               <a href="#contact" class="inline-block text-base text-slate-300 hover:text-primary mb-3" >Contact</a>
@@ -360,7 +359,6 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
               <svg role="img" class="fill-current" width="20"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
           </div>
-            <p class="text-xs font-medium text-slate-500 text-center">Dibuat dengan <span class="text-pink-500">❤</span> oleh <a href="https://Instagram.com/zenstoryy_" target="_blank" class="font-bold text-primary">Moh.Fauzan Alhafizh</a> menggunakan <a href="https://tailwindcss.com" target="_blank" class="text-primary font-bold">Tailwind CSS</a></p>
         </div>
     </div>
   </footer>
