@@ -937,10 +937,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-none {
-  background-image: none;
-}
-
 .fill-current {
   fill: currentColor;
 }
@@ -1253,10 +1249,10 @@ body{
   content: "";
   position: absolute;
   top: 50%;
-  z-index: -1;
-  translate: calc(100% + 38px) -50%;
-  width: 45px;
-  height: 45px;
+  z-index: 0;
+  translate: calc(100% + 46px) -50%;
+  width: 40px;
+  height: 40px;
   background: #515ca6;
   border-radius: 50px;
   transition: translate 0.25s 0.25s cubic-bezier(0, 0, 0.5, 2),
@@ -1264,6 +1260,7 @@ body{
 }
 
 .buttonMe:hover::before {
+  z-index: -1;
   width: 100%;
   translate: -18px -50%;
   transition: translate 0.25s cubic-bezier(0, 0, 0.5, 2),
@@ -1271,13 +1268,13 @@ body{
 }
 
 .buttonMe i {
-  margin-left: 11px;
-  color: #f1f1f1;
+  position: relative;
+  margin-left: 13px;
   transition: translate 0.25s 0.4s cubic-bezier(0, 0, 0.5, 2);
+  color: #f1f1f1;
 }
 
 .buttonMe:hover i {
-  color: #f1f1f1;
   translate: 3px 0;
 }
 
