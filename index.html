@@ -54,14 +54,18 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
               </li>
               <li class="flex items-center pl-8 mt-3 lg:mt-0">
                 <div class="flex">
-                  <span class="mr-2 text-sm text-slate-500">Light</span>
+                  <span class="mr-2 mt-1 text-sm text-slate-500 dark:text-white">Light</span>
                   <input type="checkbox" class="hidden" id="dark-toggle" />
-                  <label for="dark-toggle">
-                    <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                      <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-in-out"></div>
+                  <label for="dark-toggle" >
+                    <div
+                      class="flex mx-2 md:mx-0 h-8 w-8 md:h-8 md:w-8 checked:scale-0 cursor-pointer items-center rounded-full bg-slate-200 dark:bg-white p-1"
+                    >
+                      <div
+                        class="toggle-circle relative top-0 h-6 w-6 md:h-6 md:w-6 rounded-full bg-[#FFD700] dark:bg-slate-500 transition duration-300 ease-in"
+                      ></div>
                     </div>
                   </label>
-                  <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  <span class="ml-2 mt-1 text-sm text-slate-500 dark:text-white" >Dark</span>
                 </div>
               </li>
             </ul>
@@ -79,9 +83,10 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
       <div class="flex flex-wrap">
         <div class="w-full self-center px-4 lg:px-24 lg:w-1/2" >
           <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span class=" block font-bold text-dark text-4xl mt-2 lg:text-5xl dark:text-white"> Mohammad </span><span class="block font-bold text-dark text-4xl lg:text-5xl dark:text-white">Fauzan Alhafizh</span> </h1>
-          <h2 class="text-secondary text-lg mb-4 lg:text-2xl"><span class="text-primary font-bold">Front End Enggineer</span>  || Pixel Art Enthusiast</h2>
+          <h2 class="text-secondary text-lg my-4 lg:text-xl"><span class="text-primary font-bold">Front End Enggineer</span>  || Pixel Art Enthusiast</h2>
           <p class="font-medium text-slate-400 mb-10 leading-relaxed">Belajar Web Programming mudah dan menyenangkan bukan, <span class="font-bold text-dark dark:text-white">BUKAN!</span></p>
-          <a href="https://wa.me/085162902018" target="_blank"  class="button font-semibold hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"> <span class="txt">Hubungi Saya</span></a>
+          <a href="dist/file/CV.pdf" download="cv.pdf" class="button font-semibold hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out "> <span class="txt">Download CV</span></a>
+          <a href="https://wa.me/085162902018" target="_blank"  class="button font-semibold hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out ml-3"> <span class="txt">Hubungi Saya</span></a>
         </div>
         <div class="w-full self-end px-4 lg:w-1/2">
           <div class="relative -mt-5 lg:mt-0 lg:right-0">
@@ -124,6 +129,8 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
             <!-- facebook -->
             <a href="https://www.facebook.com/zen.bangga" target="_blank" class="w-9 h-9 mr-3 rounded-full flex items-center justify-center  border border-slate-300 text-slate-300 hover:bg-primary hover:border-primary hover:text-white">
               <svg role="img" class="fill-current" width="20"  viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <a href="https://www.linkedin.com/in/mohammad-fauzan-alhafizh/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex items-center justify-center  border border-slate-300 text-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" class="fill-current" width="20" viewBox="0 0 24 24"><title>Linkedin</title><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path></svg>
             </a>
           </div>
         </div>
@@ -140,8 +147,8 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
   </section>
   <!-- About section end -->
 
-  <!-- Portfolio section start -->
-  <!-- <section id="portfolio" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
+  <!-- Pixel Art section start -->
+  <!-- <section id="pixel" class="pt-36 pb-32 bg-slate-100 dark:bg-slate-800">
     <div class="container">
       <div class="w-full px-4">
         <div class="max-w-xl mx-auto text-center mb-16">
@@ -182,7 +189,7 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
       </div>
     </div>
   </section> -->
-  <!-- Portfolio section end -->
+  <!-- Pixel Art section end -->
   
   <!-- Portfolio section Start -->
   <section id="portfolio" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
@@ -199,10 +206,10 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
       <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
         <img src="dist/img/project/hamka.JPG" alt="WEB HAMKA" class="w-full">
         <div class="py-8 px-6">
-          <h3><a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">WEB HAMKA</a></h3>
+          <h3><a href="https://fauzanalhfzh.github.io/web-hamka/" target="_blank" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">WEB HAMKA</a></h3>
           <p class="font-medium text-secondary text-base mb-6">Pusat informasi dan komunitas teknologi, menyediakan sumber pengetahuan terkini dan wadah berbagi ide untuk para penggemar teknologi website dan mobile programming. Bergabunglah untuk mengembangkan keterampilan dan jaringan Anda!</p>
-          <a href="" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
-          <a href="" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
+          <a href="https://fauzanalhfzh.github.io/web-hamka/" target="_blank" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
+          <a href="https://github.com/fauzanalhfzh/web-hamka" target="_blank" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
         </div>
       </div>
     </div>
@@ -210,10 +217,10 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
       <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
         <img src="dist/img/project/fightingGames.PNG" alt="Fighting Games" class="w-full">
         <div class="py-8 px-6">
-          <h3><a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Fighting Games - Pixel Art</a></h3>
+          <h3><a href="https://fauzanalhfzh.github.io/fighting-game/" target="_blank" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Fighting Games - Pixel Art</a></h3>
           <p class="font-medium text-secondary text-base mb-6">Website fighting games  saya adalah tempat untuk merasakan ketegangan dan keseruan dalam berbagai permainan pertarungan. Sambut tantangan, tunjukkan keahlian Anda, dan jadilah juara!</p>
-          <a href="" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
-          <a href="" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
+          <a href="https://fauzanalhfzh.github.io/fighting-game/" target="_blank" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
+          <a href="https://github.com/fauzanalhfzh/fighting-game" target="_blank" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
         </div>
       </div>
     </div>
@@ -222,10 +229,32 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
       <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
         <img src="dist/img/project/pukulTikusTanah.PNG" alt="Pukul Tikus Tanah" class="w-full">
         <div class="py-8 px-6">
-          <h3><a href="" class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Game Pukul Tikus Tanah</a></h3>
+          <h3><a href="https://fauzanalhfzh.github.io/pukul-tikus-tanah/" target="_blank"  class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">Game Pukul Tikus Tanah</a></h3>
           <p class="font-medium text-secondary text-base mb-6">Selamat datang di "Pukul Tikus Tanah" - tempat seru untuk menguji refleks dan ketepatan Anda! Nikmati permainan online yang menghibur ini dan pukul tikus-tikus yang muncul di tanah dengan cepat.</p>
-          <a href="" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
-          <a href="" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
+          <a href="https://fauzanalhfzh.github.io/pukul-tikus-tanah/" target="_blank" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
+          <a href="https://github.com/fauzanalhfzh/pukul-tikus-tanah" target="_blank" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+        <img src="dist/img/project/349.JPG" alt="349 Period Tracker" class="w-full">
+        <div class="py-8 px-6">
+          <h3><a href="https://www.349periodtracker.com/" target="_blank"  class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">349 Period Tracker</a></h3>
+          <p class="font-medium text-secondary text-base mb-6">Selamat datang di "349 Period Tracker" - aplikasi pelacakan menstruasi yang akurat dan ramah pengguna. Dengan pemberitahuan personalisasi dan fitur analisis, membantu Anda memahami dan merencanakan siklus menstruasi dengan lebih baik.</p>
+          <a href="https://www.349periodtracker.com/" target="_blank" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
+          <a href="https://github.com/fauzanalhfzh/349periodtracker" target="_blank" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10 dark:bg-slate-800">
+        <img src="dist/img/project/admin.JPG" alt="349 Period Tracker" class="w-full">
+        <div class="py-8 px-6">
+          <h3><a href="https://zenweb2iu.000webhostapp.com/php/mahasiswa.php" target="_blank"  class="block mb-3 font-semibold text-xl text-dark hover:text-primary truncate dark:text-white">SINTA CRUD</a></h3>
+          <p class="font-medium text-secondary text-base mb-6">Sistem Informasi Terpadu untuk Pengelolaan Data adalah aplikasi web yang menyederhanakan pengelolaan data dengan antarmuka intuitif dan fitur CRUD yang mudah digunakan. Dengan manajemen pengguna canggih dan laporan pemantauan, SINTA CRUD meningkatkan efisiensi operasional.</p>
+          <a href="https://zenweb2iu.000webhostapp.com/php/mahasiswa.php" target="_blank" class="font-medium text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80">Try it now !</a>
+          <a href="https://github.com/fauzanalhfzh/sinta-crud" target="_blank" class="font-semibold text-primary border-2 border-primary py-2 px-4 rounded-lg hover:opacity-80">Source code</a>
         </div>
       </div>
     </div>
